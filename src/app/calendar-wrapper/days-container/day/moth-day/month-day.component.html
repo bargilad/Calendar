@@ -1,0 +1,16 @@
+<div class="day" [ngClass] = "{'disabled': todayData.isDisabled}" >
+  <div class="header">
+    <div class="date" [ngClass] = "{'disabled': todayData.isDisabled}" >
+      {{todayData.today | date: 'd'}}
+    </div>
+    <div *ngIf = addingMeetingsIsEnabled class="add-new-meeting" (click)="addNewMeeting()">+</div>
+  </div>
+  <div class="meetings">
+    <div *ngFor="let meeting of todayData.meetings">
+      <app-meeting [meetingDetails]="meeting"></app-meeting>
+    </div>
+  </div>
+</div>
+
+
+

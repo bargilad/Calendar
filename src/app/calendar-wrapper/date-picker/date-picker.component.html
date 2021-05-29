@@ -1,0 +1,19 @@
+<div class="date-pickers">
+  <mat-form-field appearance="fill">
+    <mat-label>Months</mat-label>
+    <mat-select [(value)]="selectedMonth" (valueChange)="changeMonth()">
+      <mat-option *ngFor="let month of months" [value]="month.value">
+        {{month.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Years</mat-label>
+    <mat-select [(value)]="selectedYear" (valueChange)="changeYear()">
+      <mat-option *ngFor="let year of years" [value]="year">
+        {{year}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

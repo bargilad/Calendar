@@ -1,0 +1,12 @@
+<div class="days-container">
+  <div class="days-of-week">
+   <span *ngFor="let dayOfWeek of weekDays" class="day">
+      <app-week-day [today]="dayOfWeek"></app-week-day>
+    </span>
+  </div>
+  <div class="days-in-month">
+    <span *ngFor="let day of daysInMonth" class="day">
+      <app-month-day [todayData]="day"></app-month-day>
+    </span>
+  </div>
+</div>

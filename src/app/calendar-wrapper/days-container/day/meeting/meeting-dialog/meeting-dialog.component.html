@@ -1,0 +1,23 @@
+<div>
+  <h1 mat-dialog-title>Create new meeting</h1>
+  <div mat-dialog-content>
+    <p>Time:</p>
+    <mat-form-field>
+      <mat-label>Time (hh:mm)</mat-label>
+      <input matInput [(ngModel)]="data.time">
+    </mat-form-field>
+
+    <p>Topic:</p>
+    <mat-form-field>
+      <mat-label>Topic</mat-label>
+      <input matInput [(ngModel)]="data.topic">
+    </mat-form-field>
+
+    <p>Participants:</p>
+    <mat-form-field>
+      <mat-label>Participants</mat-label>
+      <input matInput [(ngModel)]="data.participants">
+    </mat-form-field>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial >Ok</button>
+  </div>
+</div>

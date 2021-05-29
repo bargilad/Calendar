@@ -1,0 +1,16 @@
+.days-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 13%;
+  height: 100%;
+  .days-of-week{
+    display: flex;
+    justify-content: center;
+  }
+  .days-in-month{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
